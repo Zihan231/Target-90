@@ -15,24 +15,24 @@ body {
   width: 100%;
 }
 main {
+  margin: 20px 0;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
-  /* max-width: 400px; */
   width: 40%;
-  min-height: 40vh;
+  /* max-height: 95vh; */
   animation: fadeIn 1s ease;
 }
 .Main-Heading {
   width: 100%;
   color: #4b5563;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 h1 {
-  margin: 15px 0 10px 0;
+  margin: 10px 0 10px 0;
   font-size: 1.8rem;
   color: #1e3a8a;
 }
@@ -71,7 +71,7 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 footer {
-  margin-top: 2rem;
+  margin-top: 20px;
   font-size: 0.9rem;
   color: #9ca3af;
 }
@@ -80,7 +80,8 @@ footer {
   font-size: 0.9rem;
   color: red;
 }
-hr{
+hr {
+  opacity: 0.4;
   margin: 10px 0;
 }
 #result {
@@ -97,13 +98,13 @@ hr{
   padding: 0 5px;
   border: 1px solid #555c7229;
 }
-.footer-highlight{
-    color: #1e40af;
-    font-weight: 500;
-
+.footer-highlight {
+  color: #1e40af;
+  font-weight: 500;
 }
 @media screen and (max-width: 768px) {
   main {
+    margin: 20px 0;
     width: 90%;
     padding: 1.5rem;
   }
@@ -113,6 +114,20 @@ hr{
   input,
   button {
     font-size: 0.9rem;
-    height: 6vh;
+    /* height: 4vh; */
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  main {
+    width: 70%;
+    padding: 1.5rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  input,
+  button {
+    font-size: 1rem;
+    /* height: 6.5vh; */
   }
 }
