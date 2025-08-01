@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Target 90</title>
+  </head>
+  <body>
+    <main>
+      <h1>🎓 Target 90 GPA Calculator</h1>
+      <p class="Main-Heading">Calculate how much you need in your final exam to achieve an A+ GPA.</p>
+        <input
+          type="number"
+          name="Mid-Marks"
+          id="Mid-Marks"
+          placeholder="Enter your Midterm Marks"
+          required
+        />
+        <button type="button" onclick="calculateGrades()">Submit</button>
+        <p id="error-message" style="color: red;"></p>
+      <div id="result" style="display: none">
+        <hr>
+        <p>
+          You need <span class="highlight" id="A-plus"></span> marks in your final exam to achieve an <span class="highlight">A+</span>
+          GPA.
+        </p>
+        <hr>
+        <p>
+          You need <span class="highlight" id="A"></span> marks in your final exam to achieve an <span class="highlight">A</span> GPA.
+        </p>
+        <hr>
+        <p>
+          You need <span class="highlight" id="B-plus"></span> marks in your final exam to achieve a <span class="highlight">B+</span> GPA.
+        </p>
+        <hr>
+        <p>
+          You need <span class="highlight" id="B"></span> marks in your final exam to achieve a <span class="highlight">B</span> GPA.
+        </p>
+        <hr>
+        <p>
+          You need <span class="highlight" id="C-plus"></span> marks in your final exam to achieve a <span class="highlight">C+</span> GPA.
+        </p>
+        <hr>
+        <p>
+          You need <span class="highlight" id="C"></span> marks in your final exam to achieve a <span class="highlight">C</span> GPA.
+        </p>
+        <hr>
+        <p>
+          You need <span class="highlight" id="D-plus"></span> marks in your final exam to achieve a <span class="highlight">D+</span> GPA.
+        </p>
+        <hr>
+        <p>
+          You need <span class="highlight" id="D"></span> marks in your final exam to achieve a <span class="highlight">D</span> GPA.
+        </p>
+        <hr>
+      </div>
+      <footer>Made for <span class="footer-highlight">AIUB</span> Students ❤️</footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
